@@ -1,87 +1,115 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio ด้านเทคโนโลยีสารสนเทศ</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; }
-    header { background: #1e3a8a; color: white; padding: 2rem 1rem; text-align: center; }
-    nav { background: #111827; display: flex; flex-wrap: wrap; justify-content: center; }
-    nav a { color: white; padding: 0.75rem 1rem; text-decoration: none; }
-    nav a:hover { background: #374151; }
-    section { padding: 2rem 1rem; max-width: 900px; margin: auto; }
-    h2 { color: #1e3a8a; }
-    .card { background: #f9fafb; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    footer { background: #1f2937; color: white; text-align: center; padding: 1rem; }
-    @media (min-width: 768px) {
-      header { padding: 3rem; }
-      section { padding: 3rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Portfolio</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial}
+body{background:#faf7ff;color:#333}
+section{padding:60px 10%}
+h2{text-align:center;margin-bottom:30px;color:#6a3fbf}
+.card{background:white;border-radius:15px;padding:25px;box-shadow:0 4px 10px rgba(0,0,0,.1);margin-bottom:25px}
+header{background:linear-gradient(135deg,#7b4fd6,#c7b6ff);color:white;padding:80px 10%;text-align:center}
+.avatar{
+    width:130px;height:130px;border-radius:50%;background:white;margin:auto;margin-bottom:15px;
+display:flex;align-items:center;justify-content:center;font-size:50px;color:#7b4fd6
+}
+
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #ddd;padding:10px;text-align:center}
+th{background:#e6dcff}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+
+.fade{opacity:0;transform:translateY(40px);transition:1s}
+.fade.show{opacity:1;transform:none}
+
+footer{text-align:center;padding:30px;background:#6a3fbf;color:white}
+
+@media(max-width:600px){
+section{padding:40px 6%}
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <img src="https://gdb.voanews.com/EEA0B145-95D4-4532-9C69-D0FCD1833D53_w408_r0_s.jpg" alt="profile">
-  <h1>นางสาว ชญาณิศา จบศรี</h1>
-  <p>ผู้สนใจด้านเทคโนโลยีสารสนเทศ (IT)</p>
+<div class="avatar"></div>
+<h1>Miss Nichaphat Pinya</h1>
+<p>IT Student Portfolio</p>
 </header>
 
-<nav>
-  <a href="#profile">ประวัติ</a>
-  <a href="#interest">ความสนใจ</a>
-  <a href="#skills">ทักษะ</a>
-  <a href="#works">ผลงาน</a>
-  <a href="#cmu">เป้าหมาย</a>
-</nav>
-
-<section id="profile">
-  <div class="card">
-    <h2>ประวัติส่วนตัวและการศึกษา</h2>
-    <p>ชื่อ: นางสาว ชญาณิศา จบศรี</p>
-    <p>โรงเรียน: บุญวาทย์วิทยาลัย</p>
-    <p>รายวิชาที่เรียนเน้นด้านคณิตศาสตร์ วิทยาศาสตร์ และคอมพิวเตอร์ ซึ่งแสดงถึงความพร้อมในการศึกษาต่อสายไอที</p>
-  </div>
+<section class="fade">
+<h2>👤 ประวัติส่วนตัว | Personal Info</h2>
+<div class="card">
+<p><b>ชื่อ:</b> นางสาวณิชาภัทร ปิ่นยะ</p>
+<p><b>โรงเรียน:</b> บุญวาทย์วิทยาลัย</p>
+<p><b>แผนการเรียน:</b> GIFTED COMPUTER</p>
+<p><b>GPA:</b> 3.40</p>
+</div>
 </section>
 
-<section id="interest">
-  <div class="card">
-    <h2>ความสนใจและแรงบันดาลใจด้าน IT</h2>
-    <p>เริ่มสนใจด้านไอทีจากการเรียนรู้เทคโนโลยีและการทำงานของคอมพิวเตอร์ เห็นถึงบทบาทของไอทีในการพัฒนาสังคม</p>
-    <p>สาขาที่สนใจเป็นพิเศษ ได้แก่ Programming, AI, Data และ Software Development</p>
-  </div>
+<section class="fade">
+<h2>💻 Skills & Programming</h2>
+<div class="card">
+<table>
+<tr><th>Skill</th><th>Description</th><th>Level</th></tr>
+<tr><td>HTML / CSS</td><td>Basic Website</td><td>Basic</td></tr>
+<tr><td>Python</td><td>Programming / Data</td><td>Basic–Medium</td></tr>
+<tr><td>Excel</td><td>Formula / Graph / Cleaning</td><td>Medium</td></tr>
+<tr><td>PowerPoint / Canva</td><td>Presentation Design</td><td>Medium</td></tr>
+<tr><td>Power BI</td><td>Dashboard</td><td>Basic</td></tr>
+</table>
+</div>
 </section>
 
-<section id="skills">
-  <div class="card">
-    <h2>ทักษะและความรู้ด้านไอที</h2>
-    <ul>
-      <li>พื้นฐานการเขียนโปรแกรมและการใช้คอมพิวเตอร์</li>
-      <li>การใช้เทคโนโลยีเพื่อการเรียนรู้</li>
-      <li>การเรียนรู้ด้วยตนเองผ่านสื่อออนไลน์</li>
-    </ul>
-  </div>
+<section class="fade">
+<h2>📂 Projects</h2>
+<div class="grid">
+<div class="card">Project A<br>Learning: dkig-upoFxicdi,</div>
+<div class="card">Project B<br>Learning: dkig-upoFxicdi,</div>
+<div class="card">Project C<br>Learning: dkig-upoFxicdi,</div>
+<div class="card">Project D<br>Learning: dkig-upoFxicdi,</div>
+<div class="card">Project E<br>Learning: dkig-upoFxicdi,</div>
+</div>
 </section>
 
-<section id="works">
-  <div class="card">
-    <h2>ผลงานและกิจกรรม</h2>
-    <p>มีประสบการณ์ทำชิ้นงานและโครงงานด้านไอที รวมถึงการเข้าร่วมกิจกรรม อบรม และการทำงานทั้งแบบเดี่ยวและกลุ่ม</p>
-  </div>
+<section class="fade">
+<h2>🎓 Training Experience</h2>
+<div class="card">
+<ul>
+<li>Computer Game Camp</li>
+<li>Programming Camp</li>
+</ul>
+</div>
 </section>
 
-<section id="cmu">
-  <div class="card">
-    <h2>เหตุผลที่เลือกศึกษาด้านไอทีและมหาวิทยาลัยเชียงใหม่</h2>
-    <p>เลือกศึกษาด้านไอทีของมหาวิทยาลัยเชียงใหม่เนื่องจากมีหลักสูตรที่มีคุณภาพ คณาจารย์ที่มีความเชี่ยวชาญ และสภาพแวดล้อมที่เอื้อต่อการพัฒนา</p>
-    <p>เป้าหมายในอนาคตคือการนำความรู้ด้านไอทีไปพัฒนาตนเองและสร้างประโยชน์ให้กับสังคม</p>
-  </div>
+<section class="fade">
+<h2>🔥 Inspiration & Goal</h2>
+<div class="card">
+<p>
+ดิฉันมีความตั้งใจที่จะศึกษาต่อในสาขาเทคโนโลยีสารสนเทศ เพื่อพัฒนาความรู้และทักษะด้านเทคโนโลยีให้สามารถนำไปประยุกต์ใช้ได้จริง  
+I aim to study Information Technology to develop skills and create innovations that improve people's lives.
+</p>
+</div>
 </section>
 
 <footer>
-  <p>© 2026 Portfolio ด้าน IT</p>
+IT Portfolio © 2026
 </footer>
+
+<script>
+const fades=document.querySelectorAll(".fade");
+window.addEventListener("scroll",()=>{
+fades.forEach(f=>{
+const top=f.getBoundingClientRect().top;
+if(top<window.innerHeight-100){f.classList.add("show")}
+})
+});
+</script>
 
 </body>
 </html>
